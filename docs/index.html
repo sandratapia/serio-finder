@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;400&family=Raleway:wght@400;800&display=swap" rel="stylesheet">
+    <title>SerioFinder</title>
+    <link href="./assets/css/main.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e08e6a29e6.js" crossorigin="anonymous"></script>
+</head>
+<body class="body">
+    <div class="main__landing landing-js">
+        <div class="landing__container">
+            <div class="landing__logo">
+                <h1>SerioFinder</h1>
+                <div class="landing__logo__img"></div>
+            </div>
+            <form class="form__landing" action="">
+                <label class="user" for="user">Introduce tu usuario</label>
+                <input class="introduce__user user-js" type="text" id="user" placeholder="Ada Finder">
+                <p class="user__advise-js hidden">Por favor, introduce tu nombre de usuario</p>
+                <a href="#" class="access access-js">Acceder</a>
+            </form>
+        </div>
+    </div>
+    <header class="header">
+        <div class="header__logo wrapper">
+            <div class="go__landing">
+                <h1>SerioFinder</h1>
+                <div class="header__logo__img"></div>
+            </div>
+            <div class="header__welcome wrapper">
+                <i class="fas fa-user"></i>
+                <p class="welcome__user welcome-js">
+                    
+                </p>
+            </div>
+        </div>
+        <div class="header__favandSearch wrapper">
+            <div class="header__finder favourites-js">
+                <i class="far fa-star"></i>
+                <p class="header__fav">Favoritos</p>
+                <p class="counter-js">0</p>
+                <i class="fas fa-caret-down arrowUp-js"></i>
+            </div>
+            <form class="header__form" action="">
+                <input class="header__search search-js" type="text" placeholder="Busca tu serie...">
+                <i class="fas fa-search lupa-js"></i>
+            </form>
+        </div>
+    </header>
+
+    <main class="main wrapper">
+        <section class="main__sectionFilms filmSearch-js">
+            <div class="main__series">
+                <h2 class="main__title__series">Tu búsqueda</h2>
+                <ul class="list list-js">
+                    
+                </ul>
+            </div>
+        </section>
+        <section class="favourites hiddenSection-js hidden">
+            <h2 class="favourites__title">Tus favoritos</h2>
+            <div class="favourites__reset reset-js">
+                <i class="far fa-trash-alt"></i>
+                <p>Eliminar el listado</p>
+            </div>
+            <div class="favourites__series">
+                <ul class="favourites__list favContainer-js">
+
+                </ul>
+            </div>
+        </section>
+    </main>
+    <script src="./assets/js/main.js" type="text/javascript"></script>
+</body>
+</html>

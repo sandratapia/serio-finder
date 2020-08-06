@@ -1,0 +1,81 @@
+.body{
+    width: 100%;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    @media all and (min-width: 768px){
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 20px;
+    }
+}
+
+.main__sectionFilms{
+    font-family: $font-secundary;
+    margin-top: 15px;
+    padding: 12px 0 15px 0;
+    @media all and (min-width: 768px){
+        grid-column: 1 / 4;
+        grid-row: 1 / 2;
+    }
+    
+    .main__series{
+        display: flex;
+        flex-direction: column;
+        .main__title__series{
+            font-family: $font-primary;
+            color: $color-primary;
+            text-align: center;
+            font-size: 20px;
+            padding-bottom: 20px;
+        }
+        .list{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: 33.4px;
+            padding: 8px 20px 8px 20px;
+            background-color: $color-background;
+            min-height: 300px;
+            border-radius: 15px;
+            .main__listSeries{
+                border: 2px solid $color-primary;
+                border-radius: 4px;
+                width: 160px;
+                height: 240px;
+                display: flex;
+                flex-direction: column;
+                margin: 10px 5px 5px 5px;
+                cursor: pointer;
+                &:hover{
+                    transform: scale(1.05);
+                    box-shadow: 0 2px 4px 0 $color-dark;
+                }
+                .img__film{
+                    height: 78%;
+                    .images{
+                        width: 160px;
+                        height: 100%;
+                    }
+                }
+                .title__film{
+                    height: 22%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+
+.addGrid{
+    grid-column: 2 / 4;
+}
+.favourite__tvShow{
+    background-color: $color-primary;
+    color: $color-light;
+}

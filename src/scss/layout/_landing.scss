@@ -1,0 +1,94 @@
+.main__landing{
+    color: $color-light;
+    font-family: $font-primary;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 150vh;
+    background-color: rgba(0,0,0,.8);
+    position: absolute;
+    @media all and (min-width: 768px){
+        align-items: center;
+        height: 100vh;
+    }
+    .landing__container{
+        background-color: $color-primary;
+        margin-top: 100px;
+        width:280px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 25px 0 25px 0;
+        border-radius: 15px;
+        @media all and (min-width: 768px){
+            width:700px;
+            margin-top: 0px;
+        }
+        .landing__logo{
+            display: flex;
+            font-size: 15px;
+            @media all and (min-width: 768px){
+                font-size: 40px;
+            }
+            .landing__logo__img{
+                width: 40px;
+                margin-left: 4px;
+                background-image: url(../images/adafinder-white.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                @media all and (min-width: 768px){
+                    width: 70px;
+                    margin-left: 10px;
+                }
+            }
+        }
+        .form__landing{
+            color: $color-light;
+            text-align: center;
+            padding-top: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            .user{
+                margin-bottom: 15px;
+            }
+            .introduce__user{
+                border-radius: 15px;
+                border: 1px solid $color-primary;
+                padding: 7px 0 7px 4px;
+                outline: none;
+                margin-bottom: 10px;
+                width: 60%;
+                &:focus {
+                border: 1px solid $color-primary;
+                outline: none;
+                box-shadow: 0 0 4px 0 rgba($color-box-shadow, 0.9);
+                }
+                @media all and (min-width: 768px){
+                    padding: 7px 0 7px 12px;
+                }
+            }
+            .access{
+                margin-top: 12px;
+                background-color: $color-light;
+                outline: none;
+                border-radius: 15px;
+                padding: 7px 0 7px 0;
+                width: 140px;
+                color: $color-primary;
+                text-decoration: none;
+                &:focus {
+                    border: 1px solid $color-primary;
+                    outline: none;
+                    box-shadow: 0 0 4px 0 ($color-box-shadow, 0.9);
+                }
+            }
+        }
+    }
+}
